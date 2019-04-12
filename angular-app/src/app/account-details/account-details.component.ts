@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LambdaService } from './lambda.service';
-
+import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { AccountData } from './accountData';
 
 @Component({
@@ -9,7 +9,7 @@ import { AccountData } from './accountData';
   styleUrls: ['./account-details.component.less']
 })
 export class AccountDetailsComponent implements OnInit {
-  accountData: AccountData;
+  accountData: HttpResponse<AccountData>;
   
 
   constructor(private lambdaService: LambdaService) { }
