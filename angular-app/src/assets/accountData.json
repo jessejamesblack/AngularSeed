@@ -1,5 +1,5 @@
 [
-  {"name": "Core Java"},
-  {"name": "Angular 2"},
-  {"name": "Hibernate"}
+  {"address": "Core Java"},
+  {"address": "Angular 2"},
+  {"address": "Hibernate"}
 ]  
