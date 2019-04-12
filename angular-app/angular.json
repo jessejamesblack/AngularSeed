@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+             "src/styles.less"
             ],
             "scripts": [],
             "es5BrowserSupport": true
