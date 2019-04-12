@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { DefaultComponent } from './default/default.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AccountDetailsComponent } from './account-details/account-details.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,8 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
