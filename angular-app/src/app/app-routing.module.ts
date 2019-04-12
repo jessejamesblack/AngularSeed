@@ -10,7 +10,7 @@ const routes: Routes = [
     component: DefaultComponent
   },
   {
-    path: 'default/accountdetails',
+    path: 'accountdetails',
     component: AccountDetailsComponent
   },
   {

@@ -9,6 +9,7 @@ import { AccountData } from './accountData';
 export class LambdaService {
 
   url = "http://localhost:4200/assets/accountData.json";
+  apigatewayURL = "https://ihns2dghaj.execute-api.us-east-2.amazonaws.com/dev"
   constructor(private http: HttpClient) { }
 
   fetchData() : Observable<AccountData> {
