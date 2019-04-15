@@ -4,12 +4,14 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
 import { AccountData } from './accountData';
+import { AccountList } from './accountList';
 @Injectable({
   providedIn: 'root'
 })
 export class LambdaService {
 
   url = "http://localhost:4200/assets/accountData.json";
+  accountListUrl = "http://localhost:4200/assets/accountListData.json";
   apigatewayURL = "https://ihns2dghaj.execute-api.us-east-2.amazonaws.com/dev"
   constructor(private http: HttpClient) { }
 
@@ -18,6 +20,12 @@ export class LambdaService {
       .pipe(
         catchError(this.handleError)
       );
+  }
+  fetchAcountListData(): Observable<HttpResponse<AccountList>> {
+    return this.http.get<HttpResponse<AccountList>>(this.accountListUrl)
+    .pipe(
+      catchError(this.handleError)
+    );
   }
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
