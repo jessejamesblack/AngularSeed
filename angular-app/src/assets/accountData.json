@@ -1,5 +1,47 @@
 [
-  {"address": "Core Java"},
-  {"address": "Angular 2"},
-  {"address": "Hibernate"}
-]  
+  {
+    "address": "11111 East Place",
+    "website": "www.east.com",
+    "uwsegment": "middle market",
+    "sic": "3411 Metal Operation",
+    "lastDateOfRiskControl": "January 1, 2018",
+    "customerNumber": "12345",
+    "accountNumber": "9-45678",
+    "bgiCode": "0969",
+    "nacis": "Metal Working",
+    "fein": "99-9999999",
+    "dandbnumber": "123456789",
+    "cco": "123-456",
+    "yearsInBusiness": "20"
+  },
+  {
+    "address": "22222 West Place",
+    "website": "www.West.com",
+    "uwsegment": "West middle market",
+    "sic": "3411 Iron Operation",
+    "lastDateOfRiskControl": "January 1, 1970",
+    "customerNumber": "12345",
+    "accountNumber": "9-45678",
+    "bgiCode": "0969",
+    "nacis": "Metal Working",
+    "fein": "99-9999999",
+    "dandbnumber": "123456789",
+    "cco": "123-456",
+    "yearsInBusiness": "20"
+  },
+  {
+    "address": "33333 South Place",
+    "website": "www.South.com",
+    "uwsegment": "South middle market",
+    "sic": "3411 Plastic Operation",
+    "lastDateOfRiskControl": "January 1, 1999",
+    "customerNumber": "12345",
+    "accountNumber": "9-45678",
+    "bgiCode": "0969",
+    "nacis": "Metal Working",
+    "fein": "99-9999999",
+    "dandbnumber": "123456789",
+    "cco": "123-456",
+    "yearsInBusiness": "20"
+  }
+]

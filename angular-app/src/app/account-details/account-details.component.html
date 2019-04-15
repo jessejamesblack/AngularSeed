@@ -6,12 +6,34 @@
     <div class="panel-body">
       <table class="table table-bordered table-hover">
         <tr>
-          <th>CUSTOMER NAME</th>
-          <th>ACCOUNT DETAILS</th>
+          <th>address</th>
+          <th>website</th>
+          <th>uwsegment</th>
+          <th>sic</th>
+          <th>lastDateOfRiskControl</th>
+          <th>customerNumber</th>
+          <th>accountNumber</th>
+          <th>bgiCode</th>
+          <th>naics</th>
+          <th>fein</th>
+          <th>dandbnumber</th>
+          <th>cco</th>
+          <th>yearsInBusiness</th>
         </tr>
         <tr *ngFor="let account of accountData">
-          <td></td>
           <td>{{account.address}}</td>
+          <td>{{account.website}}</td>
+          <td>{{account.uwsegment}}</td>
+          <td>{{account.sic}}</td>
+          <td>{{account.lastDateOfRiskControl}}</td>
+          <td>{{account.customerNumber}}</td>
+          <td>{{account.accountNumber}}</td>
+          <td>{{account.bgiCode}}</td>
+          <td>{{account.naics}}</td>
+          <td>{{account.fein}}</td>
+          <td>{{account.dandbnumber}}</td>
+          <td>{{account.cco}}</td>
+          <td>{{account.yearsInBusiness}}</td>
         </tr>
       </table>
     </div>

@@ -3,7 +3,7 @@ export class AccountData {
   website: string;
   uwsegment: string;
   sic: string;
-  lastDateOfRishControl: Date;
+  lastDateOfRiskControl: Date;
   customerNumber: string;
   accountNumber: string;
   bgiCode: string;
