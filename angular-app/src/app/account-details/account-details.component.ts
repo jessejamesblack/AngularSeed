@@ -15,11 +15,11 @@ export class AccountDetailsComponent implements OnInit {
   constructor(private lambdaService: LambdaService) { }
 
   ngOnInit() {
-    this.getData();
+    this.getAccountInfoData();
   }
 
-  getData () {
-    this.lambdaService.fetchData().subscribe(
+  getAccountInfoData () {
+    this.lambdaService.fetchAccountInfoData().subscribe(
       data => {
         if (data) {
           console.log(data);
