@@ -1,7 +1,7 @@
 export class AccountList
     {
         company: string;
-        account: number;
+        account: string;
         date:any;
         companyTwo:string;
         premium: string;
