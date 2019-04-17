@@ -16,28 +16,26 @@
           <h3  align="center">ASSIGNED ACCOUNT LIST</h3>
           <table class="table table-bordered table-hover">
             <tr>
-              <th>Company</th>
-              <th>Account #</th>
               <th>Date</th>
-              <th>Company</th>
-              <th>Premium</th>
               <th>LOB</th>
-              <th>Appetite</th>
               <th>SIC</th>
-              <th>New/Renewal</th>
-              <th>Status</th>
+              <th>Account number</th>
+              <th>Appetite</th>
+              <th>Company name</th>
+              <th>Policty status</th>
+              <th>Premium</th>
+              <th>Renewal type</th>
             </tr>
             <tr *ngFor="let data of accountListData">
-              <td>{{ data.company }}</td>
-              <td>{{ data.account }}</td>
-              <td>{{ data.date }}</td>
-              <td>{{ data.companyTwo }}</td>
+              <td>{{ data.Date }}</td>
+              <td>{{ data.LOB }}</td>
+              <td>{{ data.SIC }}</td>
+              <td>{{ data.accountNumber }}</td>
+              <td>{{ data.appetite }}</td>
+              <td>{{ data.companyName }}</td>
+              <td>{{ data.policyStatus }}</td>
               <td>{{ data.premium }}</td>
-              <td>{{ data.lob }}</td>
-              <td>{{ data.apetite }}</td>
-              <td>{{ data.sic }}</td>
-              <td>{{ data.new }}</td>
-              <td>{{ data.status }}</td>
+              <td>{{ data.renewalType }}</td>
             </tr>
           </table>
          </article>

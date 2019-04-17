@@ -18,13 +18,13 @@ export class LambdaService {
   constructor(private http: HttpClient) { }
 
   fetchAccountInfoData(): Observable<HttpResponse<AccountData>> {
-    return this.http.get<HttpResponse<AccountData>>(this.accountInfoUrl)
+    return this.http.get<HttpResponse<AccountData>>(this.apigatewayAccountInfoURL)
       .pipe(
         catchError(this.handleError)
       );
   }
   fetchAcountListData(): Observable<HttpResponse<AccountList>> {
-    return this.http.get<HttpResponse<AccountList>>(this.accountListUrl)
+    return this.http.get<HttpResponse<AccountList>>(this.apigatewayAccountListURL)
     .pipe(
       catchError(this.handleError)
     );

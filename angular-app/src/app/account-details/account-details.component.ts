@@ -22,9 +22,8 @@ export class AccountDetailsComponent implements OnInit {
     this.lambdaService.fetchAccountInfoData().subscribe(
       data => {
         if (data) {
-          console.log(data);
-          this.accountData = data
-          console.log(this.accountData);
+          console.log(data['results']);
+          this.accountData = data['results'];
         }
       },
       err => {

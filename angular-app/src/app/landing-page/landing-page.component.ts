@@ -23,8 +23,9 @@ export class LandingPageComponent implements OnInit {
     this._lamdaService.fetchAcountListData()
     .subscribe((res) =>{
       if(res){
-        console.log(res);
-        this.accountListData = res;
+        console.log(res['results']);
+        this.accountListData = res['results'];
+        console
       }
     },
     err => {

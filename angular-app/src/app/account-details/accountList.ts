@@ -1,12 +1,11 @@
-export class AccountList
-    {
-        company: string;
-        account: number;
-        date:any;
-        companyTwo:string;
-        premium: string;
-        lob: string;
-        sic: string;
-        new: string;
-        status:string;
-      }
+export class AccountList {
+  Date: string;
+  LOB: string;
+  SIC: string;
+  accountNumber: string;
+  appetite: string;
+  companyName: string;
+  policyStatus: string;
+  premium: number;
+  renewalType: string;
+}
