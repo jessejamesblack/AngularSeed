@@ -2,72 +2,72 @@
   <div class="row">
     <div class="col col-md-2" id="div1">
       <div class="row">
-          <h4 align="center">Quick Links</h4>
-          <nav>
-              <ul>
-                <li><a href="">Remedy</a></li>
-                <li><a href="#">A-Rate Auto</a></li>
-                <li><a href="#">A-Rater GL</a></li>
-              </ul>
-            </nav>
+        <h4 align="center">Quick Links</h4>
+        <nav>
+          <ul>
+            <li><a href="">Remedy</a></li>
+            <li><a href="#">A-Rate Auto</a></li>
+            <li><a href="#">A-Rater GL</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="row">
-          <h4  align="center">Quick Links</h4>
-          <nav>
-              <ul>
-                <li><a href="">Remedy</a></li>
-                <li><a href="#">A-Rate Auto</a></li>
-                <li><a href="#">A-Rater GL</a></li>
-              </ul>
-            </nav>
+        <h4 align="center">Quick Links</h4>
+        <nav>
+          <ul>
+            <li><a href="">Remedy</a></li>
+            <li><a href="#">A-Rate Auto</a></li>
+            <li><a href="#">A-Rater GL</a></li>
+          </ul>
+        </nav>
       </div>
-     
+
     </div>
 
     <div class="col col-md-6" id="div2">
       <h2 align="center">Assigned A/c List</h2>
-          <table class="table table-bordered table-hover">
-            <tr>
-              <th>Date</th>
-              <th>LOB</th>
-              <th>SIC</th>
-              <th>Account number</th>
-              <th>Appetite</th>
-              <th>Company name</th>
-              <th>Policty status</th>
-              <th>Premium</th>
-              <th>Renewal type</th>
-            </tr>
-            <tr *ngFor="let data of accountListData">
-              <td>{{ data.Date }}</td>
-              <td>{{ data.LOB }}</td>
-              <td>{{ data.SIC }}</td>
-              <td>{{ data.accountNumber }}</td>
-              <td>{{ data.appetite }}</td>
-              <td>{{ data.companyName }}</td>
-              <td>{{ data.policyStatus }}</td>
-              <td>{{ data.premium }}</td>
-              <td>{{ data.renewalType }}</td>
-            </tr>
-          </table>
+      <table class="table table-bordered table-hover">
+        <tr>
+          <th>Date</th>
+          <th>LOB</th>
+          <th>SIC</th>
+          <th>Account number</th>
+          <th>Appetite</th>
+          <th>Company name</th>
+          <th>Policty status</th>
+          <th>Premium</th>
+          <th>Renewal type</th>
+        </tr>
+        <tr *ngFor="let data of accountListData">
+          <td>{{ data.Date }}</td>
+          <td>{{ data.LOB }}</td>
+          <td>{{ data.SIC }}</td>
+          <td><a href="#" [routerLink]="['/accountDetails', data.accountNumber]"> {{ data.accountNumber }}</a></td>
+          <td>{{ data.appetite }}</td>
+          <td>{{ data.companyName }}</td>
+          <td>{{ data.policyStatus }}</td>
+          <td>{{ data.premium }}</td>
+          <td>{{ data.renewalType }}</td>
+        </tr>
+      </table>
     </div>
-    <div class="col col-md-2" id="div3">
+    <div class=" col col-md-2" id="div3">
       <div class="row">
 
-          <h4 align="center">Announcements</h4>
-          This is an announcement
+        <h4 align="center">Announcements</h4>
+        This is an announcement
       </div>
-      <div  class="row">
+      <div class="row">
 
-          <h4 align="center">Metrics</h4>
-          These are metrics!!
+        <h4 align="center">Metrics</h4>
+        These are metrics!!
       </div>
     </div>
   </div>
 
   <div class="row">
-      <footer>
-          <!-- <p>Footer</p> -->
-        </footer>
+    <footer>
+      <!-- <p>Footer</p> -->
+    </footer>
   </div>
 </div>
