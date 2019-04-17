@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LambdaService } from '../account-details/lambda.service';
+import { LambdaService } from '../lambda.service';
 import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { AccountList } from '../account-details/accountList';
 import { Router, Route } from '@angular/router';

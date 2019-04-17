@@ -8,13 +8,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AccountDetailsComponent } from './account-details/account-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
     DefaultComponent,
     PageNotFoundComponent,
     AccountDetailsComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

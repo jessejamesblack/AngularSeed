@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { LambdaService } from './lambda.service';
 import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { AccountData } from './accountData';
 import { ActivatedRoute, Router } from '@angular/router';
+import { LambdaService } from '../lambda.service';
 
 @Component({
   selector: 'app-account-details',
@@ -24,18 +24,18 @@ export class AccountDetailsComponent implements OnInit {
   ngOnInit() {
     this._activatedRoute.params.subscribe((data)=>{
       this.paramData = data;
-      this.lambdaService.fetchData().subscribe((data)=>{
+      this.lambdaService.fetchAccountInfoData().subscribe((data)=>{
         this.accountDetailsData = data;
         console.log("accnt deta", this.accountDetailsData)
         this.accountDetails(this.accountDetailsData);
       })
     })
-     
-    // this.getData();
+  
+    this.getAccountInfoData();
   }
 
-  getData () {
-    this.lambdaService.fetchData().subscribe(
+  getAccountInfoData () {
+    this.lambdaService.fetchAccountInfoData().subscribe(
       data => {
         if (data) {
           this.accountData = data

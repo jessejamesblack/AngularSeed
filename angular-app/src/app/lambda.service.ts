@@ -3,20 +3,22 @@ import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/htt
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-import { AccountData } from './accountData';
-import { AccountList } from './accountList';
+import { AccountData } from './account-details/accountData';
+import { AccountList } from './account-details/accountList';
 @Injectable({
   providedIn: 'root'
 })
 export class LambdaService {
 
-  url = "http://localhost:4200/assets/accountData.json";
+  accountInfoUrl = "http://localhost:4200/assets/accountData.json";
   accountListUrl = "http://localhost:4200/assets/accountListData.json";
-  apigatewayURL = "https://ihns2dghaj.execute-api.us-east-2.amazonaws.com/dev"
+  apigatewayAccountInfoURL = "https://16x4qt7as2.execute-api.us-east-2.amazonaws.com/dev/accountInfo";
+  apigatewayAccountListURL = "https://16x4qt7as2.execute-api.us-east-2.amazonaws.com/dev/accountList";
+  
   constructor(private http: HttpClient) { }
 
-  fetchData(): Observable<HttpResponse<AccountData>> {
-    return this.http.get<HttpResponse<AccountData>>(this.url)
+  fetchAccountInfoData(): Observable<HttpResponse<AccountData>> {
+    return this.http.get<HttpResponse<AccountData>>(this.accountInfoUrl)
       .pipe(
         catchError(this.handleError)
       );
