@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LandingPageComponent } from './landing-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LambdaService } from '../account-details/lambda.service';
+import { LambdaService } from '../lambda.service';
 
 describe('LandingPageComponent', () => {
   let component: LandingPageComponent;

@@ -3,8 +3,8 @@ import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/htt
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-import { AccountData } from './accountData';
-import { AccountList } from './accountList';
+import { AccountData } from './account-details/accountData';
+import { AccountList } from './account-details/accountList';
 @Injectable({
   providedIn: 'root'
 })

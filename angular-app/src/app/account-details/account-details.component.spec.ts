@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AccountDetailsComponent } from './account-details.component';
 import { HttpClientModule } from '@angular/common/http'; 
-import { LambdaService } from './lambda.service';
+import { LambdaService } from '../lambda.service';
 
 describe('AccountDetailsComponent', () => {
   let component: AccountDetailsComponent;
