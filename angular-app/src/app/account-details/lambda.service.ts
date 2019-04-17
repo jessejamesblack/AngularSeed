@@ -14,6 +14,7 @@ export class LambdaService {
   accountListUrl = "http://localhost:4200/assets/accountListData.json";
   apigatewayAccountInfoURL = "https://16x4qt7as2.execute-api.us-east-2.amazonaws.com/dev/accountInfo";
   apigatewayAccountListURL = "https://16x4qt7as2.execute-api.us-east-2.amazonaws.com/dev/accountList";
+  
   constructor(private http: HttpClient) { }
 
   fetchAccountInfoData(): Observable<HttpResponse<AccountData>> {
