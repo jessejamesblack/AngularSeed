@@ -8,7 +8,7 @@ export class AccountData {
   accountNumber: string;
   bgiCode: string;
   naics: string;
-  fein: string;
+  fein: string; 
   dandbnumber: string;
   cco: string;
   yearsInBusiness: number;

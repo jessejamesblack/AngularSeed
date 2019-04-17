@@ -1,42 +1,57 @@
-<div class="container-fluid">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3>Account Details</h3>
-    </div>
-    <div class="panel-body">
-      <table class="table table-bordered table-hover">
-        <tr>
-          <th>address</th>
-          <th>website</th>
-          <th>uwsegment</th>
-          <th>sic</th>
-          <th>lastDateOfRiskControl</th>
-          <th>customerNumber</th>
-          <th>accountNumber</th>
-          <th>bgiCode</th>
-          <th>naics</th>
-          <th>fein</th>
-          <th>dandbnumber</th>
-          <th>cco</th>
-          <th>yearsInBusiness</th>
-        </tr>
-        <tr *ngFor="let account of accountData">
-          <td>{{account.address}}</td>
-          <td>{{account.website}}</td>
-          <td>{{account.uwsegment}}</td>
-          <td>{{account.sic}}</td>
-          <td>{{account.lastDateOfRiskControl}}</td>
-          <td>{{account.customerNumber}}</td>
-          <td>{{account.accountNumber}}</td>
-          <td>{{account.bgiCode}}</td>
-          <td>{{account.naics}}</td>
-          <td>{{account.fein}}</td>
-          <td>{{account.dandbnumber}}</td>
-          <td>{{account.cco}}</td>
-          <td>{{account.yearsInBusiness}}</td>
-        </tr>
-      </table>
-    </div>
 
-  </div>
+<div class="panel panel-primary">
+<div class="panel-heading">
+ACCOUNT DEATILS
+</div>
+
+<div class="panel-body">
+<div class="row">
+  <div class="col-xs-6 col-md-4">Account Address:</div>
+  <div class="col-xs-6 col-md-4">{{details.address}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">Account UW Segment:</div>
+  <div class="col-xs-6 col-md-4">{{details.uwsegment}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">Account SIC:</div>
+  <div class="col-xs-6 col-md-4">{{details.sic}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">Last Date of Risk Control:</div>
+  <div class="col-xs-6 col-md-4">{{details.lastDateOfRiskControl}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">Customer Number:</div>
+  <div class="col-xs-6 col-md-4">{{details.customerNumber}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">Account Number:</div>
+  <div class="col-xs-6 col-md-4">{{details.accountNumber}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">Address:</div>
+  <div class="col-xs-6 col-md-4">{{details.address}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">UW Segment:</div>
+  <div class="col-xs-6 col-md-4">{{details.bgiCode}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">SIC:</div>
+  <div class="col-xs-6 col-md-4">{{details.nacis}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">Last Date of Risk Control:</div>
+  <div class="col-xs-6 col-md-4">{{details.dandbnumber}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">CCOr:</div>
+  <div class="col-xs-6 col-md-4">{{details.cco}}</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-md-4">Years In Business:</div>
+  <div class="col-xs-6 col-md-4">{{details.yearsInBusiness}}</div>
+</div>
+</div>
 </div>
